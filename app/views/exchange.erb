@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="<%= url('stylesheet.css') %>" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<div class="container contact">
+	<div class="row">
+		<div class="col-md-3">
+			<div class="contact-info">
+				
+            <h2><a href="/allExchanges">Click here</a></h2>
+            
+				<h4>To View All Exchanges history !</h4>
+			</div>
+		</div>
+		<div class="col-md-9">
+         <div class="contact-form">
+
+            <h2> the exchange value is <%= locals[:finalValue] %></h2>
+            <h3><a href="/">Click here</a></h3>
+            
+				<h4>To Convert Again !</h4>
+         </div>
+            </div>
+         </div>
+
+   </body>
+</html>
+
+
+
+
+
+

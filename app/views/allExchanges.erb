@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="<%= url('stylesheet.css') %>" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<div class="container contact">
+	<div class="row">
+		<div class="col-md-3">
+			<div class="contact-info">
+				<img src="money.png" alt="image"/>
+            <h2><a href="/">Click here</a></h2>
+            
+				<h4>To Convert Again !</h4>
+			</div>
+		</div>
+		<div class="col-md-9">
+         <div class="contact-form">
+
+<table id="myTable" class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Initial Value</th>
+      <th scope="col">From</th>
+      <th scope="col">To</th>
+      <th scope="col">FInal Value</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @exchanges.each do |exchange| %>
+    <tr>
+      <th scope="row"><%= exchange.id %></th>
+      <td><%= exchange.initialValue %></td>
+      <td><%= exchange.from %></td>
+      <td><%= exchange.to %></td>
+      <td><%= exchange.finalValue %></td>
+      <% end %>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+	</div>
+</div>
+
+   </body>
+</html>
+
